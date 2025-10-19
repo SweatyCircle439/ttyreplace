@@ -1,0 +1,20 @@
+{
+  "name": "ttyreplace",
+  "module": "index.ts",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "private": true,
+  "scripts": {
+    "start": "bun index.ts",
+    "build": "bun build index.ts --compile --outfile=dist/ttyreplace ; bun build uninstaller.ts --compile --outfile=dist/uninstaller"
+  },
+  "license": "GPL-3.0-only",
+  "type": "module",
+  "dependencies": {
+    "@inquirer/prompts": "^7.9.0"
+  }
+}
