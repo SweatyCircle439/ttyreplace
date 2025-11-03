@@ -9,12 +9,16 @@
   },
   "private": true,
   "scripts": {
-    "start": "bun index.ts",
-    "build": "bun build index.ts --compile --outfile=dist/ttyreplace ; bun build uninstaller.ts --compile --outfile=dist/uninstaller"
+    "start": "bun index.tsx",
+    "build": "bun build index.tsx --compile --outfile=dist/ttyreplace"
   },
   "license": "GPL-3.0-only",
   "type": "module",
   "dependencies": {
-    "@inquirer/prompts": "^7.9.0"
+    "@opentui/core": "^0.1.31",
+    "@opentui/react": "^0.1.31",
+    "@types/fontname": "^1.0.0",
+    "fontname": "^1.0.1",
+    "react": "^19.2.0"
   }
 }

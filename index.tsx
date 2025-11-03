@@ -1,6 +1,6 @@
  /*
  *  TTYREPLACE
- *  - File: share.ts
+ *  - File: index.tsx
  *  Copyright (C) 2025 SweatyCircle439
  *  
  *  This program is free software: you can redistribute it and/or modify
@@ -17,17 +17,24 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-export const baseDir = "/.SC439TTYR";
+import { render } from "@opentui/react";
+import React from "react";
+import MainWindow from "./pages/mainWindow";
 
-export interface undoConfig {
-    serviceName: string,
-    disableLightDM: boolean,
-    TTY: string,
-    userCreated: boolean,
-    user: string,
-    installKmscon: boolean
+function App() {
+    const [page, setPage] = React.useState(<></>);
+    React.useEffect(() => {
+        setPage(<MainWindow setWindow={setPage} />);
+    }, []);
+    return <box
+        justifyContent='center'
+        alignItems='center'
+        height='100%'
+        width='100%'
+        backgroundColor='#282c34'
+    >
+        {page}
+    </box>
 }
 
-export interface Page {
-    setWindow: (window: React.ReactNode) => void;
-}
+render(<App />);

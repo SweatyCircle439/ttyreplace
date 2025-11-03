@@ -1,6 +1,7 @@
 # ttyreplace
 
 >SweatyCircle439 ttyreplacer
+>
 >Copyright (C) 2025  SweatyCircle439
 >
 >This program is free software: you can redistribute it and/or modify
@@ -14,7 +15,7 @@
 >GNU General Public License for more details.
 >
 >You should have received a copy of the GNU General Public License
->along with this program.  If not, see <http://www.gnu.org/licenses/>.
+>along with this program.  If not, see [http://www.gnu.org/licenses/](http://www.gnu.org/licenses/).
 
 ## To install dependencies:
 
@@ -48,5 +49,19 @@ then, answer the questions and confirm, and you will reboot into the selected pr
 
 ## To uninstall
 
-download the uninstaller binary from the same release as the ttyreplace binary came from(or your local build), and run it
-now follow the instructions, and all changes will have been restored
+> since version 2.0.0 one binary handles both installing and uninstalling
+
+you should already have the ttyreplace binary for your version stored somewhere, run it
+and select uninstall
+
+## changelog
+
+### V2.0.0
+- the old ui is now replaced by @opentui/react ([npm](https://npmjs.com/package/@opentui/react)|[github](https://github.com/sst/opentui/tree/main/packages/react))
+- the user that runs the program can now be picked
+- added a **advanced graphical mode that enables full character set and truecolor** (using kmscon)
+- in
+- the uninstaller is now included in the binary
+- added markers for features that only *currently* work on debian
+- added the option to select which tty to replace
+- added license headers **this does not imply that the code for the previous version can be freely used, it also falls under GPLv3**

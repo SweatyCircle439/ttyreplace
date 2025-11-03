@@ -1,0 +1,16 @@
+{
+    "license-header-manager.additionalCommentStyles": [{
+        "extension": ".ts",
+        "commentStart": " /*",
+        "commentMiddle": " * ",
+        "commentEnd": " */"
+    },{
+        "extension": ".tsx",
+        "commentStart": " /*",
+        "commentMiddle": " * ",
+        "commentEnd": " */"
+    }],
+    "license-header-manager.excludeFolders": [
+        "node_modules"
+    ]
+}
