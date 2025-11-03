@@ -60,7 +60,7 @@ and select uninstall
 - the old ui is now replaced by @opentui/react ([npm](https://npmjs.com/package/@opentui/react)|[github](https://github.com/sst/opentui/tree/main/packages/react))
 - the user that runs the program can now be picked
 - added a **advanced graphical mode that enables full character set and truecolor** (using kmscon)
-- in
+- in the advanced graphical mode, you can now select the font and font size
 - the uninstaller is now included in the binary
 - added markers for features that only *currently* work on debian
 - added the option to select which tty to replace
