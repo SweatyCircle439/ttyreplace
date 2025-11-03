@@ -37,7 +37,6 @@ export default function Installer({ setWindow }: Page) {
     const [TTY, setTTY] = React.useState("tty1");
     const [serviceName, setServiceName] = React.useState(`${path.basename(program)}-${TTY}`);
     const [serviceNameUserMod, setServiceNameUserMod] = React.useState(false);
-    const [disableLightDM, setDisableLightDM] = React.useState(true);
     const [runUser, setRunUser] = React.useState("ttyreplaceuser");
     let kmsconInstalled = fs.existsSync("/usr/bin/kmscon");
     const [useAdvancedGraphics, setUseAdvancedGraphics] = React.useState(kmsconInstalled);
@@ -45,6 +44,7 @@ export default function Installer({ setWindow }: Page) {
     const [fontSize, setFontSize] = React.useState("14");
 
     const lightdmInstalled = fs.existsSync("/usr/lib/systemd/system/lightdm.service");
+    const [disableLightDM, setDisableLightDM] = React.useState(lightdmInstalled);
 
     const allFonts = [] as SelectOption[];
     function tree(dir: string) {

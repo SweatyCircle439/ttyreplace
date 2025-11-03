@@ -56,6 +56,9 @@ and select uninstall
 
 ## changelog
 
+### V2.0.1
+- fixed a bug where if lightdm wasn't installed it would still try to disable it causing it to crash
+
 ### V2.0.0
 - the old ui is now replaced by @opentui/react ([npm](https://npmjs.com/package/@opentui/react)|[github](https://github.com/sst/opentui/tree/main/packages/react))
 - the user that runs the program can now be picked
